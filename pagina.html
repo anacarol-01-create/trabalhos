@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Autobiografia — Ana Carolina</title>
+  <style>
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#111827;
+      --accent:#7c3aed; /* purple */
+      --accent-2:#06b6d4; /* teal */
+      --muted:#9ca3af;
+      --glass: rgba(255,255,255,0.04);
+      --radius:16px;
+      color-scheme: dark;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071021 85%);color:#e6eef8}
+    .wrap{max-width:1000px;margin:36px auto;padding:28px;display:grid;gap:20px;grid-template-columns:1fr 340px}/* main card */
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.7);border:1px solid rgba(255,255,255,0.03)}
+h1{font-size:28px;margin:0 0 6px;letter-spacing:-0.4px}
+.subtitle{color:var(--muted);font-size:13px;margin-bottom:14px}
+p{line-height:1.5;margin:12px 0}
+
+/* traits */
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.tag{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.03)}
+
+/* timeline */
+.timeline{margin-top:6px;border-left:2px dashed rgba(255,255,255,0.03);padding-left:14px}
+.event{margin:12px 0;padding-left:10px}
+.event h4{margin:0;font-size:15px}
+.event .meta{font-size:12px;color:var(--muted);margin-top:4px}
+
+/* sidebar */
+.aside{position:relative}
+.profile{background:linear-gradient(180deg, rgba(124,58,237,0.14), rgba(6,182,212,0.06));padding:18px;border-radius:14px}
+.avatar{width:100%;height:180px;border-radius:12px;object-fit:cover;background:linear-gradient(90deg,var(--accent),var(--accent-2));display:block}
+.meta-block{margin-top:12px}
+.meta-block h3{margin:0;font-size:16px}
+.meta-block p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+.cta{margin-top:14px;display:flex;gap:10px}
+.btn{flex:1;padding:10px 12px;border-radius:12px;border:none;cursor:pointer;font-weight:600}
+.btn-primary{background:linear-gradient(90deg,var(--accent),#9b5cf6);color:white}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+/* images list */
+.images{margin-top:18px;display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.images .img{height:80px;border-radius:8px;overflow:hidden;background:linear-gradient(90deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.9);font-weight:700}
+
+/* responsive */
+@media (max-width:880px){.wrap{grid-template-columns:1fr;padding:16px}.aside{order:2}.card{order:1}}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" aria-labelledby="title">
+      <header>
+        <h1 id="title">Autobiografia — Ana Carolina</h1>
+        <div class="subtitle">Uma versão criativa e pronta para apresentação</div>
+        <div class="tags">
+          <span class="tag">Petrópolis, RJ</span>
+          <span class="tag">Estudante</span>
+          <span class="tag">Relações Internacionais</span>
+          <span class="tag">ENEM / Bolsas</span>
+        </div>
+      </header><section style="margin-top:18px">
+    <h3>Quem sou eu</h3>
+    <p>Eu sou <strong>Ana Carolina</strong>, mas pode me chamar de <strong>Ana</strong>. Sou aquela mistura de curiosidade com teimosia boa: se eu acredito em algo, eu vou atrás — estudando, perguntando, tentando outra vez.</p>
+  </section>
+
+  <section>
+    <h3>De onde venho</h3>
+    <p>Nasci em <strong>Petrópolis, RJ</strong>, cidade de montanhas e friozinho que ensina a gostar de cobertor, pão quentinho e conversas demoradas. Cresci observando pessoas: como falam, como pensam, como decidem.</p>
+  </section>
+
+  <section>
+    <h3>O que me move hoje</h3>
+    <p>Sou estudante focada em <em>Relações Internacionais</em>. Estudo para aumentar minha pontuação no ENEM e conquistar bolsas/financiamento que ampliem minhas oportunidades. Fora da rotina de estudos, gosto de playlists, cadernos coloridos e fotografias de fim de tarde.</p>
+  </section>
+
+  <section>
+    <h3>Viradas da minha história</h3>
+    <div class="timeline">
+      <div class="event">
+        <h4>Rotina de foco</h4>
+        <div class="meta">Revisões, simulados e reestruturação de estudo — transformando erros em mapas de aprendizado.</div>
+      </div>
+      <div class="event">
+        <h4>Aprendizado prático</h4>
+        <div class="meta">Pequenas conquistas (estágios, projetos, pesquisas) que me conectaram com o mundo real.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Para onde vou</h3>
+    <p>Quero trabalhar com engenharia mecanica — especialidades em aviaçao .</p>
+  </section>
+
+  <footer style="margin-top:18px">
+    <p style="font-weight:700">Frase que me define: <span style="color:var(--accent)">"Disciplina para chegar, coragem para ficar e curiosidade para seguir."</span></p>
+  </footer>
+</main>
+
+<aside class="aside">
+  <div class="profile card">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div style="flex:1">
+        <div class="avatar" aria-hidden="true">FOTO</div>
+      </div>
+    </div>
+
+    <div class="meta-block">
+      <h3>Ana Carolina</h3>
+      <p>Estudante — Aspirante a engenharia mecanica </p>
+    </div>
+
+    <div class="cta">
+      <button class="btn btn-primary" onclick="downloadHTML()">Baixar HTML</button>
+      <button class="btn btn-ghost" onclick="copyText()">Copiar Texto</button>
+    </div>
+
+    
+  </div>  <script>
+    function copyText(){
+      const text = Eu sou Ana Carolina, mas pode me chamar de Ana. Sou aquela mistura de curiosidade com teimosia boa: se eu acredito em algo, eu vou atrás — estudando, perguntando, tentando outra vez.\n\nNasci em Petrópolis, RJ...;
+      navigator.clipboard?.writeText(text).then(()=>alert('Texto copiado para a área de transferência.'))
+    }
+
+    function downloadHTML(){
+      const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'autobiografia_ana.html';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+  </script></body>
+</html>
